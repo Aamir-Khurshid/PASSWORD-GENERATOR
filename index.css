@@ -1,0 +1,110 @@
+body {
+    background-color: aquamarine;
+}
+
+.p-40-20 {
+    padding: 60px 40px;
+}
+
+.font-white {
+    color: aliceblue;
+}
+
+.font-green {
+    color: green;
+}
+
+
+.generatePass {
+    margin: 20px auto;
+    background-color: rgb(18, 17, 17);
+    max-width: 70vw;
+    height: 80vh;
+    border: 5px solid rgb(239, 226, 226);
+    border-radius: 3%;
+}
+
+.blockOne {
+    border-bottom: 2px solid rgb(19, 19, 19);
+    margin: 30px;
+}
+
+button {
+    margin: 0px 40px;
+    padding: 10px 20px;
+    background-color: green;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: green;
+    background-color: rgb(38, 37, 37);}
+.passCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px;
+}
+
+#infoOne,
+#infoTwo {
+    color: green;
+    background-color: rgb(38, 37, 37);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 900;
+    display: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#infoOne:hover,#infoTwo:hover{
+    background-color: green;
+    color: white;
+}
+
+
+
+#infoOne.displayBlock,
+#infoTwo.displayBlock {
+    display: inline-block;
+}
+
+@media screen and (max-width:650px) {
+    .generatePass {
+        margin: 20px auto;
+        background-color: rgb(18, 17, 17);
+        max-width: 90vw;
+        min-height: 85vh;
+        height: auto;
+
+        border: 5px solid rgb(239, 226, 226);
+        border-radius: 3%;
+    }
+    button{
+        margin: 10px auto;
+        display: block;
+    }
+
+    .p-40-20{
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .passCont {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #infoOne,
+    #infoTwo {
+        font-size: 20px;
+    }
+}
